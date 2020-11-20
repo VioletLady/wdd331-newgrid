@@ -1,0 +1,47 @@
+// color palette - these colors will be the color swatches of the Colors section
+$color-1: #013E75; // Dark Blue - Action color
+$color-2: #99CEDC; // Light Blue
+$color-3: #D44013; // Orange
+$color-4: #E1B923; // Yellow
+$color-5: #FFFFFF; // White
+
+// additional colors
+$success: #6fce72; // green
+$alert: $color-3;
+/*
+body {
+    background: darken($color-1, 5%);
+    color: $color-5;
+  }*/
+
+/*Navigation colors*/
+a{cursor: url(https://cur.cursors-4u.net/nature/nat-8/nat710.cur), auto !important;}
+
+a:link,
+a:visited {
+  color: $color-4;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $color-3;
+  border: 1px dotted $color-2;
+}
+
+a:focus,
+a:active {
+  color: $color-5;
+  background-color: $color-3;
+  text-decoration: underline;
+}
+
+h3 {
+  color: $color-4;
+  animation: myh3 5s ease-in-out infinite;
+  
+}
+
+@keyframes myh3 {
+  from {color: $color-4;}
+  to {color: $color-3;}
+}

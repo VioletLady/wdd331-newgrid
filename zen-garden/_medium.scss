@@ -1,0 +1,268 @@
+@media only screen and (max-width:60rem){
+//@media only screen and (min-width:35rem), (max-width: 60rem){
+
+
+@import "footer";
+/*
+body {
+  background: darken($color-1, 5%);
+  color: $color-5;
+}
+*/
+
+.intro header h1{
+  -webkit-text-stroke: 2px #03a9f4;
+}
+body {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ),
+  url(images/darker-ocean.jpg) no-repeat center fixed;
+  background-size: cover;
+  height: 100%;
+  //overflow: hidden;
+  color: white;
+  //transform:scaleX(-1);
+}
+
+  body {
+    padding: 50px;
+    margin: 0 auto;
+  }
+
+  .page-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    grid-template-rows: auto auto 25%;
+    align-items: start;
+    justify-content: center;
+  }
+
+  .intro {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;     
+  }
+
+  .sidebar {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+    font-size: 12px;
+    padding-left:7em;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 50px 300px 300px 50px;
+    grid-template-rows: 50% 50%;
+    align-items: center;
+    text-align: left;
+  }
+
+  .design-selection {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    
+  }
+
+  .design-archives {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+  }
+
+  .zen-resources { 
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
+
+  .supporting {
+    grid-column: 1 / 3;        
+    grid-row: 2 / 3;
+  }
+/*
+  body::after {
+    content: "";
+    position: fixed;
+    background-image: url("images/yellow-fish.png");
+    background-repeat: no-repeat;
+    z-index: -3;
+    width: 300px;
+    height: 200px;
+    bottom: 300px;
+    left: 0;
+    animation: slide-fish 8s forwards infinite;
+    overflow: hidden;
+    transform: scale(0.7);
+  }
+
+  .extra2 {
+    background-image: url("images/blue-fish.png");
+    background-repeat: no-repeat;
+    z-index: 3;
+    position: fixed;
+    animation: slide-fish 10s reverse infinite;
+    width: 800px;
+    height: 300px;
+    left: -100px;
+    top: 450px;
+    overflow: hidden;
+    transform: scale(0.7);
+  }
+
+  .extra5 {
+    background-image: url("images/boot.png");
+    background-repeat: no-repeat;
+    z-index: 1;
+    position: fixed;
+    animation: MoveUpDown 25s linear infinite;
+    width: 200px;
+    height: 2000px;
+    left: 85%;
+    bottom: 0;
+  }
+
+  @keyframes MoveUpDown {
+    0% {
+      bottom: -1000px;
+    }
+
+    50% {
+      bottom: -180px;
+    }
+
+    100% {
+      bottom: -800px;
+    }
+  }
+
+  @keyframes slide-fish {
+    0% {
+      left: -400px;
+    }
+
+    25% {
+      left: 400px;
+    }
+
+    50% {
+      left: 800px;
+    }
+
+    100% {
+      left: 2000px;
+    }
+  }
+
+  .extra4 {
+    background-image: url("images/bubbles.png");
+    background-repeat: no-repeat;
+    z-index: 1;
+    position: fixed;
+    animation: animatebubble 15s linear infinite;
+    width: 500px;
+    height: 500px;
+  }
+
+  @keyframes animatebubble {
+    0% {
+      margin-top: 100%;
+    }
+
+    100% {
+      margin-top: -300%;
+    }
+  }
+
+*/
+  .explanation p:nth-child(2)::after {
+    background-image:url(images/fish-11861.png);
+    background-repeat: no-repeat;
+    //background-position:right top;
+    content: "";
+    float:left;
+    /*top:500px;
+    right:200px;
+    width:100%;
+    height:50%;*/
+    shape-outside: circle(31% at 45%);
+    margin:15px;
+		width: 500px;
+		height:300px;
+    transform: scale(0.7);
+    z-index:1;
+    transition: ease-in-out 2s;
+  }
+
+  .explanation p:nth-child(2):hover::after {
+    background-image:url(images/hawaiian-fish.png);
+    //background-repeat: no-repeat;
+    //content:"";
+    z-index: 2;
+    //transform:scale(0.2);
+    //top:10px;
+    //background-color:white;
+    width:500px;
+    height:300px;
+    shape-outside: circle(31% at 45%);
+    transition: ease-in-out 2s;
+  }
+
+  .participation p:nth-child(2)::after {
+    background-image:url(images/fish-11908.png);
+    background-repeat: no-repeat;
+    //background-position:right top;
+    content: "";
+    float:right;
+    shape-outside: circle(38% at 50%);
+    margin:15px;
+		width: 400px;
+		height:290px;
+    transform: scale(0.7);
+    transition: ease-in-out 2s;
+  }
+
+  .participation p:nth-child(2):hover::after {
+    background-image:url(images/fishes.png);
+    background-repeat: no-repeat;
+    //background-position:right top;
+    content: "";
+    float:right;
+    shape-outside: circle(38% at 50%);
+    margin:15px;
+		width: 400px;
+		height:290px;
+		transform: scale(0.7);
+    transition: ease-in-out 2s;
+  }
+
+  .requirements p:nth-child(2)::after {
+    background-image:url(images/goldfish.png);
+    background-repeat: no-repeat;
+    //background-position:right top;
+    content: "";
+    float:left;
+    shape-outside: circle(30% at 55%);
+    margin:15px;
+		width: 500px;
+		height:500px;
+    transform: scale(0.6);
+    transition: ease-in-out 2s;
+  }
+
+  .requirements p:nth-child(2):hover::after {
+    background-image:url(images/golfish2.png);
+    background-repeat: no-repeat;
+    //background-position:right top;
+    content: "";
+    float:left;
+    shape-outside: circle(30% at 55%);
+    margin:15px;
+		width: 500px;
+		height:300px;
+    transform: scale(0.7);
+    transition: ease-in-out 2s;
+  }
+
+
+
+}

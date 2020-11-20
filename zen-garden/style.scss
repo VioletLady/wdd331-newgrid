@@ -1,0 +1,24 @@
+@import "colors";
+@import "typography";
+//@import "footer";
+@import "title";
+
+// reset
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// media queries
+@import "small";
+@import "medium";
+@import "large";
+
+li {
+  list-style-type: none;
+}
+
+a{cursor: url(https://cur.cursors-4u.net/nature/nat-8/nat710.cur), auto !important;}

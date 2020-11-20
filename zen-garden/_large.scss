@@ -1,0 +1,353 @@
+@media only screen and (min-width: 60rem) {
+  @import "animationfish";
+
+
+  body {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(images/darker-ocean.jpg) no-repeat center fixed;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+    color: white;
+    position:fixed;
+  }
+
+
+  //@media only screen and (max-width: 80em) and (min-width: 60rem) {
+  .intro header h1 {
+    font-size: 6em;
+  }
+
+  .intro header h2 {
+    font-size: 2em;
+    //color: $color-3;
+    color:darken($color-1, 5%);
+    //text-shadow: 1px 1px 2px gray, 0 0 25px black, 0 0 5px grey;
+  }
+
+  .page-wrapper {
+    display: grid;
+    align-items: start;
+    justify-content: center;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 200px repeat(9, auto);
+    
+  }
+
+  
+  .page-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    grid-template-rows: auto auto 25%;
+    align-items: start;
+    justify-content: center;
+  }
+
+  footer {
+    //grid-column:3/4;
+    //grid-row:1/2;
+    //margin-top:5em;
+    position: fixed;
+    top: 580px;
+    left: 900px;
+    //bottom:50px;
+    //z-index: 5;
+  }
+
+  .main footer {
+    justify-content: center;
+    display: flex;
+    transform: scale(0.8);
+    z-index:-1;
+  }
+
+  .main footer a {
+    background-color: #03a9f4;
+    color: #FFFFFF;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 5px;
+    background: linear-gradient(to top, #03a9f4, #2f5f63);
+    border-radius: 50%;
+    border: solid 1px #2f5f63;
+    box-shadow: 4px 4px 0 #1b383b;
+    text-shadow: 0 2px 2px rgba(255, 255, 255, 0.2);
+    width: 60px;
+    z-index:-1;
+  }
+
+  .main footer a:hover {
+    color: $color-3;
+    transform: scale(1.2);
+    transition: 1s ease-in;
+    z-index:-1;
+  }
+
+  .main footer a:focus,
+  a:active {
+    color: #013E75;
+  }
+
+  .intro {
+    grid-column: 1 / 4;
+    grid-row: 1 / 11;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 200px repeat(9, auto);
+    margin-left: 1em;
+  }
+
+  .summary,
+  .preamble {
+    font-size: smaller;
+    //text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+  }
+
+  .intro header {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+  }
+
+  .summary {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+    padding-right: 2em;
+
+  }
+
+  .summary p:first-child {
+    margin-top: 0;
+  }
+
+  .preamble {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+  }
+
+  // child of page-wrapper - sibling of intro
+    /*.supporting {
+    grid-column: 2 / 3;
+    grid-row: 1 / 10;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 200px 370px auto;
+  }*/
+
+  // .supporting {
+  //   position: absolute;
+  //   left: 21.5%;
+  //   top: 50px;
+  //   width: 475px;
+  //   z-index: 1;
+  //   height: 380px;
+  //   padding-left: 45px;
+  //   overflow: hidden;
+  //   margin-top: 12em;
+  // }
+
+
+.supporting{
+  position:relative;
+}
+  .explanation {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .participation {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .benefits {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .requirements {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+
+  aside.sidebar {
+    grid-column: 3 / 4;
+    grid-row: 2 / 11;
+  }
+
+
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 4(1fr);
+    align-items: start;
+    text-align: left;
+    padding-left: 10em;
+    margin-left:10em;
+    font-size: smaller;
+    margin-top:-20em;
+    //line-height: 1.4;
+    //text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+  }
+
+  .wrapper h3 {
+    margin-top: -0.3px;
+  }
+
+  .design-selection {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+  }
+
+  .design-archives {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+
+  .zen-resources {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+  }
+
+ /* .design-selection h3 {
+    margin-top: 0;
+  }*/
+
+  .summary,
+  .preamble,
+  .sidebar {
+    font-size: small;
+  }
+
+  .page-wrapper::before {
+    content: "";
+    position: absolute;
+    background-image: url("images/new-tv.png");
+    background-repeat: no-repeat;
+    z-index: 3;
+    top: 180px;
+    left: 19%;
+    width: 70%;
+    height: 567px;
+    transform: scale(0.9);
+    // display: none; - use in media query when width is less than 80em 
+  }
+
+  .supporting {
+    position: absolute;
+    left: 26%;
+    top: 80px;
+    width: 480px;
+    z-index: 1;
+    height: 330px;
+    padding-left: 25px;
+    overflow: hidden;
+    margin-top: 10em;
+  }
+
+  .supporting div {
+    color: darken($color-1, 5%);
+    padding: 10px 50px 10px 50px;
+    box-sizing: border-box;
+  }
+
+  .supporting div:last-of-type{
+    padding-bottom:45px;
+  }
+
+  .supporting div:first-of-type{
+    padding-top:30px;
+  }
+
+  .explanation {
+    background: lighten($color-1, 45%);
+    //z-index: 1;
+    //overflow: hidden;
+    animation: zchange 30s ease-in-out reverse infinite; //slide 8s linear infinite,
+  }
+
+  // .sequenced-thing {
+  //   animation: 
+  //     sequence1 1s 2,
+  //     sequence2 3s 1s 1 forwards;
+  // }
+
+  // consider stepping into the index. You would start the first at 10, then go to 5, the one at 9 will go to 4 the one at 8 will go to 3, etc. until the one at 6 will go to 1, with it scrolling first and then sequenced to the next one
+
+  .participation {
+    background: $color-2;
+    //z-index: 2;
+    //overflow: hidden;
+    //animation: zchange 2s infinite linear; //slide 8s linear infinite,
+  }
+
+  .participation h3,
+  .benefits h3 {
+    color: darken($color-1, 5%);
+    text-align: center;
+    padding-top: .5em;
+    margin: .5em;
+  }
+
+  .requirements h3,
+  .explanation h3 {
+    text-align: center;
+    padding-top: .5em;
+    margin: .5em;
+  }
+
+  .benefits {
+    background: lighten($color-3, 18%);
+    //  z-index: 3;
+    //overflow: hidden;
+    // animation: zchange 2s infinite linear; //slide 8s linear infinite,
+  }
+
+  .requirements {
+    background: $color-4;
+    //z-index: 4;
+    // overflow: hidden;
+    // animation: zchange 2s infinite linear; //slide 8s linear infinite,
+  }
+
+  .requirements h3 {
+    color: darken($color-1, 5%)
+
+  }
+
+  .requirements a,
+  .participation a {
+    color: darken($color-3, 5%)
+  }
+
+
+  @keyframes zchange {
+    0% {
+      margin-top: -2000px;
+    }
+
+    100% {
+      margin-top: 0px;
+    }
+  }
+
+  @keyframes animatebubble {
+    0% {
+      margin-top: 0%;
+    }
+
+    100% {
+      margin-top: -150%;
+    }
+  }
+
+}
+
+/*end of media query */
