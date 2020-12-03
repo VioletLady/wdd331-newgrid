@@ -233,11 +233,11 @@
     background-image: url("images/new-tv.png");
     background-repeat: no-repeat;
     z-index: 3;
-    top: 180px;
-    left: 19%;
-    width: 750px;
+    top: 210px;
+    left: 23%;
+    width: 670px;
     height: 567px;
-    transform: scale(0.9);
+    //transform: scale(0.9);
     // display: none; - use in media query when width is less than 80em 
   }
 
