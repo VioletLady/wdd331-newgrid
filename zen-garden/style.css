@@ -512,7 +512,6 @@ body {
   .extra5 {
     background-image: url("images/boot.png");
     background-repeat: no-repeat;
-    z-index: 3;
     position: fixed;
     -webkit-animation: MoveUpDown 25s linear infinite;
             animation: MoveUpDown 25s linear infinite;
@@ -834,7 +833,7 @@ body {
     z-index: 3;
     top: 180px;
     left: 19%;
-    width: 70%;
+    width: 750px;
     height: 567px;
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
