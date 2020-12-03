@@ -27,7 +27,7 @@
     color:darken($color-1, 5%);
     //text-shadow: 1px 1px 2px gray, 0 0 25px black, 0 0 5px grey;
   }
-/*
+
   .page-wrapper {
     display: grid;
     align-items: start;
@@ -36,13 +36,8 @@
     grid-template-rows: 200px repeat(9, auto);
     //max-width: 980px;
   }
-<<<<<<< HEAD
-*/
-  
-=======
 
  /*
->>>>>>> 2bd73f803d66cf42b8ebd14869c586eb01c09c4e
   .page-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 350px);
@@ -184,7 +179,7 @@
   aside.sidebar {
     grid-column: 3 / 4;
     grid-row: 1 / 11;
-    margin-top:33em;
+    margin-top:16em;
   }
 
 

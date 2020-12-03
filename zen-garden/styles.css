@@ -517,29 +517,27 @@ a:active {
     color: #01315c;
   }
 
-  /*
-    .page-wrapper {
-      display: grid;
-      align-items: start;
-      justify-content: center;
-      grid-template-columns: 25% 50% 25%;
-      grid-template-rows: 200px repeat(9, auto);
-
-    }
-  */
   .page-wrapper {
     display: grid;
-    grid-template-columns: repeat(2, 350px);
-    grid-template-rows: auto auto 25%;
     align-items: start;
     justify-content: center;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 200px repeat(9, auto);
   }
 
+  /*
+   .page-wrapper {
+     display: grid;
+     grid-template-columns: repeat(2, 350px);
+     grid-template-rows: auto auto 25%;
+     align-items: start;
+     justify-content: center;
+   }*/
   footer {
     position: fixed;
     top: 550px;
     left: 900px;
-    z-index: 100;
+    z-index: 500;
   }
 
   .main footer {
@@ -644,7 +642,7 @@ a:active {
   aside.sidebar {
     grid-column: 3/4;
     grid-row: 1/11;
-    margin-top: 33em;
+    margin-top: 16em;
   }
 
   .wrapper {
@@ -653,14 +651,11 @@ a:active {
     grid-template-rows: 4 1fr;
     align-items: start;
     text-align: left;
-    padding-left: 10em;
-    margin-left: 10em;
     font-size: smaller;
-    margin-top: -20em;
   }
 
   .wrapper h3 {
-    margin-top: -0.3px;
+    margin-top: -0.1px;
   }
 
   .design-selection {
@@ -769,7 +764,7 @@ a:active {
 
   @keyframes zchange {
     0% {
-      margin-top: -2000px;
+      margin-top: -2030px;
     }
     100% {
       margin-top: 0px;
