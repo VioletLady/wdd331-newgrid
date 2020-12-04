@@ -1,8 +1,7 @@
 @import "colors";
 @import "typography";
-//@import "footer";
 @import "title";
-
+@import "footer";
 // reset
 *,
 *::before,
@@ -22,4 +21,4 @@ li {
   list-style-type: none;
 }
 
-a{cursor: url(https://cur.cursors-4u.net/nature/nat-8/nat710.cur), auto !important;}
+
