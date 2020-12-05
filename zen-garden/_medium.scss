@@ -49,7 +49,7 @@ body {
   .wrapper {
     display: grid;
     grid-template-columns: 50px 300px 300px 50px;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 1fr 1fr;
     align-items: center;
     text-align: left;
   }

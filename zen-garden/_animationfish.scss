@@ -25,16 +25,53 @@
     top: 300px;
     overflow: hidden;
   }
+
+  .extra5::before{
+    content: "";
+    background-image: url("images/threadonly.png");
+    background-repeat: no-repeat;
+    position: fixed;
+    animation: MoveUpDownHook 15s linear;
+    animation-iteration-count: 1;
+    width: 200px;
+    height: 2000px;
+    left: 85%;
+    margin-top:-1000px;
+    z-index: -1;
+  }
+
+  @keyframes MoveUpDownHook {
+    
+    0% { transform: translateY(0); }
+    100% { transform: translateY(1000px); 
+      display: none; }
+    /*
+    0% {
+      margin-top:0px;
+    }
+
+    99% {
+      margin-top: 500px;
+    }
+
+    100%{
+      opacity:0;
+      margin-top:0px;}*/
+    }
+
+
   .extra5 {
     background-image: url("images/boot.png");
     background-repeat: no-repeat;
-    //z-index: 3;
     position: fixed;
-    animation: MoveUpDown 25s linear infinite;
+    animation: MoveUpDown 15s linear;
+    animation-iteration-count: 1;
     width: 200px;
     height: 2000px;
     left: 85%;
     bottom: 0;
+    animation-delay:15s;
+    z-index:1;
   }
 
   @keyframes MoveUpDown {

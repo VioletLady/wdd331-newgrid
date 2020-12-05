@@ -366,8 +366,8 @@ p {
     display: grid;
     -ms-grid-columns: 50px 300px 300px 50px;
         grid-template-columns: 50px 300px 300px 50px;
-    -ms-grid-rows: 50% 50%;
-        grid-template-rows: 50% 50%;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -517,16 +517,82 @@ p {
     top: 300px;
     overflow: hidden;
   }
+  .extra5::before {
+    content: "";
+    background-image: url("images/threadonly.png");
+    background-repeat: no-repeat;
+    position: fixed;
+    -webkit-animation: MoveUpDownHook 15s linear;
+            animation: MoveUpDownHook 15s linear;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    width: 200px;
+    height: 2000px;
+    left: 85%;
+    margin-top: -1000px;
+    z-index: -1;
+  }
+  @-webkit-keyframes MoveUpDownHook {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(1000px);
+              transform: translateY(1000px);
+      display: none;
+    }
+    /*
+    0% {
+      margin-top:0px;
+    }
+
+    99% {
+      margin-top: 500px;
+    }
+
+    100%{
+      opacity:0;
+      margin-top:0px;}*/
+  }
+  @keyframes MoveUpDownHook {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(1000px);
+              transform: translateY(1000px);
+      display: none;
+    }
+    /*
+    0% {
+      margin-top:0px;
+    }
+
+    99% {
+      margin-top: 500px;
+    }
+
+    100%{
+      opacity:0;
+      margin-top:0px;}*/
+  }
   .extra5 {
     background-image: url("images/boot.png");
     background-repeat: no-repeat;
     position: fixed;
-    -webkit-animation: MoveUpDown 25s linear infinite;
-            animation: MoveUpDown 25s linear infinite;
+    -webkit-animation: MoveUpDown 15s linear;
+            animation: MoveUpDown 15s linear;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
     width: 200px;
     height: 2000px;
     left: 85%;
     bottom: 0;
+    -webkit-animation-delay: 15s;
+            animation-delay: 15s;
+    z-index: 1;
   }
   @-webkit-keyframes MoveUpDown {
     0% {
@@ -669,13 +735,16 @@ p {
       margin-top: -300%;
     }
   }*/
+  .intro header h1 {
+    -webkit-text-stroke: 2px #013E75;
+  }
   body {
     padding: 5px;
+    max-width: 80rem;
     position: relative;
   }
   body {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(images/darker-ocean.jpg) no-repeat center fixed;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/darker-ocean.jpg) no-repeat center fixed;
+    background: url(images/darker-ocean.jpg) no-repeat center center fixed;
     background-size: cover;
     height: 100%;
     overflow: hidden;
@@ -859,15 +928,15 @@ p {
     -ms-grid-row: 1;
     -ms-grid-row-span: 10;
     grid-row: 1 / 11;
-    margin-top: 16em;
+    margin-top: 15em;
   }
   .wrapper {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-    -ms-grid-rows: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1.5fr 0.7fr 1fr;
+        grid-template-rows: 1.5fr 0.7fr 1fr;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
@@ -875,16 +944,13 @@ p {
     font-size: smaller;
     line-height: 1.4;
   }
-  .wrapper h3 {
-    margin-top: -0.1px;
-  }
   .design-selection {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1 / 2;
     -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    grid-row: 1 / 3;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
   }
   .design-archives {
     -ms-grid-column: 1;
@@ -902,9 +968,6 @@ p {
     -ms-grid-row-span: 1;
     grid-row: 3 / 4;
   }
-  /* .design-selection h3 {
-    margin-top: 0;
-  }*/
   .summary,
   .preamble,
   .sidebar {
@@ -924,8 +987,8 @@ p {
   .supporting {
     position: absolute;
     left: 28%;
-    top: 80px;
-    width: 480px;
+    top: 70px;
+    width: 500px;
     z-index: 1;
     height: 330px;
     padding-left: 25px;
@@ -939,7 +1002,7 @@ p {
             box-sizing: border-box;
   }
   .supporting div:last-of-type {
-    padding-bottom: 45px;
+    padding-bottom: 50px;
   }
   .supporting div:first-of-type {
     padding-top: 30px;
@@ -977,7 +1040,7 @@ p {
   }
   @-webkit-keyframes zchange {
     0% {
-      margin-top: -2030px;
+      margin-top: -2040px;
     }
     100% {
       margin-top: 0px;
@@ -985,7 +1048,7 @@ p {
   }
   @keyframes zchange {
     0% {
-      margin-top: -2030px;
+      margin-top: -2040px;
     }
     100% {
       margin-top: 0px;
