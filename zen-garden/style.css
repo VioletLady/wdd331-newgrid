@@ -182,7 +182,6 @@ body {
 }
 
 p {
-  margin-top: 0.5em;
   line-height: 140%;
 }
 
@@ -198,15 +197,17 @@ p {
   list-style-type: none;
 }
 
-.wrapper h3 {
-  margin-top: 1.5em;
-}
-
 .wrapper ul {
   margin-top: 0.5em;
 }
 
-@media only screen and (max-device-width: 39rem) {
+@media only screen and (min-width: 20rem) {
+  .intro header h1 {
+    -webkit-text-stroke: 1px #03a9f4;
+  }
+  .sidebar, .sidebar h3 {
+    text-align: right;
+  }
   .intro, .supporting, .sidebar {
     padding: 1em 2em 1em 2em;
   }
@@ -219,6 +220,7 @@ p {
   }
   h3 {
     padding-top: 1em;
+    text-align: center;
   }
   .main footer a {
     font-weight: 100;
@@ -230,44 +232,47 @@ p {
     -webkit-transition: 1s ease-in;
     transition: 1s ease-in;
   }
-  .sidebar::after {
+  footer::after {
     content: "";
+    display: block;
     position: absolute;
     background-image: url("images/crab_PNG27.png");
     background-repeat: no-repeat;
-    z-index: -5;
     width: 180px;
     height: 152px;
     left: 15px;
-    -webkit-animation: animatecrab 10s ease-in infinite;
-            animation: animatecrab 10s ease-in infinite;
-    overflow: hidden;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-animation: swing ease-in-out 1s infinite alternate;
+            animation: swing ease-in-out 1s infinite alternate;
+    -webkit-transform-origin: center -20px;
+            transform-origin: center -20px;
+    margin-top: 18em;
+    margin-left: 1.5em;
   }
-  @-webkit-keyframes animatecrab {
+  @-webkit-keyframes swing {
     0% {
-      bottom: -3600px;
-    }
-    50% {
-      bottom: -3300px;
+      -webkit-transform: rotate(3deg);
+              transform: rotate(3deg);
     }
     100% {
-      bottom: -3600px;
+      -webkit-transform: rotate(-3deg);
+              transform: rotate(-3deg);
     }
   }
-  @keyframes animatecrab {
+  @keyframes swing {
     0% {
-      bottom: -3600px;
-    }
-    50% {
-      bottom: -3300px;
+      -webkit-transform: rotate(3deg);
+              transform: rotate(3deg);
     }
     100% {
-      bottom: -3600px;
+      -webkit-transform: rotate(-3deg);
+              transform: rotate(-3deg);
     }
   }
 }
 
-@media only screen and (min-device-width: 40rem) and (max-device-width: 60rem) {
+@media only screen and (min-width: 40rem) {
   .main footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -316,13 +321,13 @@ p {
     background-size: cover;
     height: 100%;
     color: white;
-  }
-  body {
     margin: 0 auto;
-    padding: 5em;
   }
   h3 {
-    padding-top: 1em;
+    text-align: center;
+  }
+  .sidebar h3 {
+    text-align: left;
   }
   .page-wrapper {
     display: -ms-grid;
@@ -480,9 +485,12 @@ p {
     -webkit-transition: ease-in-out 2s;
     transition: ease-in-out 2s;
   }
+  footer::after {
+    display: none;
+  }
 }
 
-@media only screen and (min-width: 60rem) {
+@media only screen and (min-width: 61rem) {
   body::after {
     content: "";
     position: fixed;
@@ -596,6 +604,7 @@ p {
       margin-top: -300%;
     }
   }
+  /*
   .design-selection::after {
     content: "";
     position: fixed;
@@ -604,36 +613,29 @@ p {
     z-index: -5;
     width: 180px;
     height: 152px;
-    bottom: -350px;
-    right: 100px;
-    -webkit-animation: animatecrab 10s ease-in 2;
-            animation: animatecrab 10s ease-in 2;
+    bottom:-350px;
+    right:100px;
+    animation: animatecrab 10s ease-in 2;
     overflow: hidden;
-    -webkit-animation-delay: 4s;
-            animation-delay: 4s;
+    animation-delay: 4s;
   }
-  @-webkit-keyframes animatecrab {
-    0% {
-      bottom: -350px;
-    }
-    50% {
-      bottom: 100px;
-    }
-    100% {
-      bottom: -350px;
-    }
-  }
+
+
   @keyframes animatecrab {
     0% {
       bottom: -350px;
     }
-    50% {
-      bottom: 100px;
+
+    50%{
+      bottom:100px;
     }
+
     100% {
-      bottom: -350px;
+      bottom:-350px;
     }
   }
+
+*/
   .extra6 {
     width: 500px;
     height: 500px;
@@ -668,8 +670,7 @@ p {
     }
   }*/
   body {
-    padding: 20px;
-    max-width: 80rem;
+    padding: 5px;
     position: relative;
   }
   body {
@@ -680,6 +681,12 @@ p {
     overflow: hidden;
     color: white;
     position: fixed;
+  }
+  .sidebar {
+    padding-left: 0px;
+  }
+  h3 {
+    padding-top: 0px;
   }
   .intro header h1 {
     font-size: 6em;
@@ -713,7 +720,7 @@ p {
   footer {
     position: fixed;
     top: 550px;
-    left: 900px;
+    left: 950px;
     z-index: 500;
   }
   .main footer {
@@ -773,6 +780,7 @@ p {
   .summary,
   .preamble {
     font-size: smaller;
+    margin: 0 .5em;
   }
   .intro header {
     -ms-grid-column: 1;
@@ -858,13 +866,14 @@ p {
     display: grid;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-    -ms-grid-rows: 4 1fr;
-        grid-template-rows: 4 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
     text-align: left;
     font-size: smaller;
+    line-height: 1.4;
   }
   .wrapper h3 {
     margin-top: -0.1px;
@@ -881,17 +890,17 @@ p {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1 / 2;
-    -ms-grid-row: 3;
+    -ms-grid-row: 2;
     -ms-grid-row-span: 1;
-    grid-row: 3 / 4;
+    grid-row: 2 / 3;
   }
   .zen-resources {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1 / 2;
-    -ms-grid-row: 4;
+    -ms-grid-row: 3;
     -ms-grid-row-span: 1;
-    grid-row: 4 / 5;
+    grid-row: 3 / 4;
   }
   /* .design-selection h3 {
     margin-top: 0;
@@ -908,13 +917,13 @@ p {
     background-repeat: no-repeat;
     z-index: 3;
     top: 210px;
-    left: 23%;
+    left: 25%;
     width: 670px;
     height: 567px;
   }
   .supporting {
     position: absolute;
-    left: 26%;
+    left: 28%;
     top: 80px;
     width: 480px;
     z-index: 1;
@@ -945,13 +954,11 @@ p {
   .participation h3,
   .benefits h3 {
     color: #01315c;
-    text-align: center;
     padding-top: .5em;
     margin: .5em;
   }
   .requirements h3,
   .explanation h3 {
-    text-align: center;
     padding-top: .5em;
     margin: .5em;
   }
@@ -995,6 +1002,15 @@ p {
     }
   }
 */
+  .explanation p:nth-child(2)::after {
+    display: none;
+  }
+  .participation p:nth-child(2)::after {
+    display: none;
+  }
+  .requirements p:nth-child(2)::after {
+    display: none;
+  }
 }
 
 /*end of media query */

@@ -1,5 +1,5 @@
 
-@media only screen and (min-device-width : 40rem) and (max-device-width : 60rem){
+@media only screen and (min-width : 40rem){
 
 @import "footer";
 
@@ -16,14 +16,15 @@ body {
   background-size: cover;
   height: 100%;
   color: white;
+  margin: 0 auto;
+    //padding:5em;
 }
 
-  body {
-    margin: 0 auto;
-    padding:5em;
-  }
+  h3{
+    //padding-top:1em;
+    text-align:center;}
 
-  h3{padding-top:1em;}
+  .sidebar h3{text-align:left;}
 
   .page-wrapper {
     display: grid;
@@ -149,5 +150,8 @@ body {
     transition: ease-in-out 2s;
   }
 
+  footer::after {
+  display:none;
+  }
 
 }
