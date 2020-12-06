@@ -34,20 +34,26 @@ h3 {
 }
 
 @-webkit-keyframes myh3 {
-  from {
+  0% {
     color: #E1B923;
   }
-  to {
+  50% {
     color: #D44013;
+  }
+  100% {
+    color: #E1B923;
   }
 }
 
 @keyframes myh3 {
-  from {
+  0% {
     color: #E1B923;
   }
-  to {
+  50% {
     color: #D44013;
+  }
+  100% {
+    color: #E1B923;
   }
 }
 
@@ -517,31 +523,26 @@ p {
     top: 300px;
     overflow: hidden;
   }
-  .extra5::before {
+  /*
+  .extra5::before{
     content: "";
     background-image: url("images/threadonly.png");
     background-repeat: no-repeat;
     position: fixed;
-    -webkit-animation: MoveUpDownHook 15s linear;
-            animation: MoveUpDownHook 15s linear;
-    -webkit-animation-iteration-count: 1;
-            animation-iteration-count: 1;
+    animation: Hook 20s linear;
+    animation-iteration-count: 1;
     width: 200px;
     height: 2000px;
     left: 85%;
-    margin-top: -1000px;
-    z-index: -1;
+    margin-top:-900px;
   }
-  @-webkit-keyframes MoveUpDownHook {
-    0% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-    }
-    100% {
-      -webkit-transform: translateY(1000px);
-              transform: translateY(1000px);
-      display: none;
-    }
+
+  @keyframes Hook {
+    
+    0% { transform: translateY(0); }
+    50% { transform: translateY(1200px); 
+      display: none; }
+    100%{ transform: translateY(0); }
     /*
     0% {
       margin-top:0px;
@@ -553,31 +554,10 @@ p {
 
     100%{
       opacity:0;
-      margin-top:0px;}*/
-  }
-  @keyframes MoveUpDownHook {
-    0% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-    }
-    100% {
-      -webkit-transform: translateY(1000px);
-              transform: translateY(1000px);
-      display: none;
-    }
-    /*
-    0% {
-      margin-top:0px;
+      margin-top:0px;}
     }
 
-    99% {
-      margin-top: 500px;
-    }
-
-    100%{
-      opacity:0;
-      margin-top:0px;}*/
-  }
+*/
   .extra5 {
     background-image: url("images/boot.png");
     background-repeat: no-repeat;
@@ -590,31 +570,30 @@ p {
     height: 2000px;
     left: 85%;
     bottom: 0;
-    -webkit-animation-delay: 15s;
-            animation-delay: 15s;
-    z-index: 1;
   }
   @-webkit-keyframes MoveUpDown {
     0% {
-      bottom: -1000px;
-    }
-    50% {
-      bottom: -180px;
+      bottom: -1200px;
     }
     100% {
-      bottom: -1000px;
+      bottom: -180px;
     }
+    /*
+    100% {
+      bottom: -1200px;
+    }*/
   }
   @keyframes MoveUpDown {
     0% {
-      bottom: -1000px;
-    }
-    50% {
-      bottom: -180px;
+      bottom: -1200px;
     }
     100% {
-      bottom: -1000px;
+      bottom: -180px;
     }
+    /*
+    100% {
+      bottom: -1200px;
+    }*/
   }
   @-webkit-keyframes slide-fish {
     0% {
@@ -789,7 +768,7 @@ p {
   footer {
     position: fixed;
     top: 550px;
-    left: 950px;
+    left: 920px;
     z-index: 500;
   }
   .main footer {

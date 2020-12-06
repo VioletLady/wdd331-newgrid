@@ -38,10 +38,10 @@ a:active {
 h3 {
   color: $color-4;
   animation: myh3 5s ease-in-out infinite;
-  
 }
 
 @keyframes myh3 {
-  from {color: $color-4;}
-  to {color: $color-3;}
+  0% {color: $color-4;}
+  50% {color: $color-3;}
+  100% {color: $color-4;}
 }
