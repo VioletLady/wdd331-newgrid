@@ -1086,8 +1086,8 @@ p {
   }
   .explanation {
     background: #5eb2fe;
-    -webkit-animation: zchange 40s ease-in-out infinite;
-            animation: zchange 40s ease-in-out infinite;
+    -webkit-animation: zchange 60s ease-in-out infinite;
+            animation: zchange 60s ease-in-out infinite;
   }
   @-webkit-keyframes zchange {
     0% {
