@@ -1,8 +1,7 @@
 @media only screen and (min-width: 61rem) {
   @import "animationfish";
   @import "LargeTitleAnimation";
-  
-  
+   
 
   body {
     padding: 5px;
@@ -16,7 +15,7 @@
     height: 100%;
     overflow: hidden;
     color: white;
-    position: fixed;
+    // position: fixed;
   }
 
   .sidebar {
@@ -43,17 +42,7 @@
     justify-content: center;
     grid-template-columns: 25% 50% 25%;
     grid-template-rows: 200px repeat(9, auto);
-    //max-width: 980px;
   }
-
-  /*
-  .page-wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 350px);
-    grid-template-rows: auto auto 25%;
-    align-items: start;
-    justify-content: center;
-  }*/
 
   footer {
     //grid-column:3/4;
@@ -61,7 +50,7 @@
     //margin-top:5em;
     position: fixed;
     top: 550px;
-    left: 920px;
+    left: 71%;
     //bottom:50px;
     z-index: 500;
   }
@@ -88,14 +77,12 @@
     box-shadow: 4px 4px 0 #1b383b;
     text-shadow: 0 2px 2px rgba(255, 255, 255, 0.2);
     width: 60px;
-    //z-index:-1;
   }
 
   .main footer a:hover {
     color: $color-3;
     transform: scale(1.2);
-    transition: 1s ease-in;
-    //z-index:-1;
+    transition: .5s ease-in;
   }
 
   .main footer a:focus,
@@ -115,7 +102,6 @@
   .summary,
   .preamble {
     font-size: smaller;
-    //text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
     margin:0 .5em;
   }
 
@@ -139,28 +125,6 @@
     grid-column: 1 / 2;
     grid-row: 4 / 5;
   }
-
-  // child of page-wrapper - sibling of intro
-  /*.supporting {
-    grid-column: 2 / 3;
-    grid-row: 1 / 10;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 200px 370px auto;
-  }*/
-
-  // .supporting {
-  //   position: absolute;
-  //   left: 21.5%;
-  //   top: 50px;
-  //   width: 475px;
-  //   z-index: 1;
-  //   height: 380px;
-  //   padding-left: 45px;
-  //   overflow: hidden;
-  //   margin-top: 12em;
-  // }
-
 
   .supporting {
     position: relative;
@@ -199,14 +163,9 @@
     grid-template-rows: 1.5fr 0.7fr 1fr;
     align-items: start;
     text-align: left;
-    //padding-left: 10em;
-    //margin-left:10em;
     font-size: smaller;
-    //margin-top:-20em;
     line-height: 1.4;
-    //text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
   }
-
 
   .design-selection {
     grid-column: 1 / 2;
@@ -235,20 +194,20 @@
     background-image: url("images/new-tv.png");
     background-repeat: no-repeat;
     z-index: 3;
-    top: 210px;
-    left: 25%;
+    top: 216px;
+    left: 17%;
     width: 650px;
     height: 567px;
-    // display: none; - use in media query when width is less than 80em 
+    transform: scale(0.8)
   }
 
   .supporting {
     position: absolute;
-    left: 28%;
-    top: 70px;
-    width: 500px;
+    left: 26%;
+    top: 130px;
+    width: 425px;
     z-index: 1;
-    height: 330px;
+    height: 280px;
     padding-left: 25px;
     overflow: hidden;
     margin-top: 10em;
@@ -340,9 +299,6 @@
     color: darken($color-3, 5%)
   }
 
-
-
-
   /*
   @keyframes animatebubble {
     0% {
@@ -355,25 +311,80 @@
   }
 */
 
-
-
 .explanation p:nth-child(2)::after {
   display:none;
 }
-
 
 .participation p:nth-child(2)::after {
   display:none;
 }
 
-
 .requirements p:nth-child(2)::after {
  display:none;
 }
 
+} /*end of media 61rem min*/
 
+@media only screen and (min-width: 63.5rem) {
 
+  .page-wrapper::before {
+    left: 18%;
+  }
 
-}
+  .supporting {
+    left: 27%;
+  }
 
-/*end of media query */
+} /* end of media 63.5rem min */
+
+@media only screen and (min-width: 66.0rem) {
+
+  .page-wrapper::before {
+    left: 20%;
+  }
+
+  .supporting {
+    left: 28%;
+  }
+
+} /* end of media 66.0rem min */
+
+@media only screen and (min-width: 68.75rem) {
+
+  .page-wrapper::before {
+    transform: scale(.9);
+  }
+
+  .supporting {
+    top: 100px;
+    height: 310px;
+  }
+
+} /* end of media 68.75rem min */
+
+@media only screen and (min-width: 70.625rem) {
+
+  .page-wrapper::before {
+    left: 21.5%;
+  }
+
+  .supporting {
+    left: 28%;
+  }
+
+} /* end of media 70.625rem min */
+
+@media only screen and (min-width: 76.5rem) {
+
+  .page-wrapper::before {
+    transform: scale(1.0);
+    left: 24%;
+  }
+
+  .supporting {
+    width: 500px;
+    left: 27.5%;
+  }
+
+} /* end of media 76.5rem min */
+

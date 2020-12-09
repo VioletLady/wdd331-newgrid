@@ -38,8 +38,6 @@ p {
 
 }
 
-//p{margin-bottom:5px;}
-
 @media only screen and (min-width : 20rem){
 
   .intro header h1{
@@ -75,8 +73,6 @@ p {
     border: solid 1px #2f5f63;
     transition: 1s ease-in;
   }
-
-
   
   footer::after {
     content: "";
@@ -99,7 +95,6 @@ p {
 
   100%{transform:rotate(-3deg);}
 }
-
 
 }
 
