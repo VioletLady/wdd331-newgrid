@@ -1,10 +1,10 @@
 @media only screen and (min-width: 61rem) {
   @import "animationfish";
   @import "LargeTitleAnimation";
-   
+
 
   body {
-    padding: 5px;
+    //padding: 5px;
     max-width: 80rem;
     position: relative; // for extra divs at bottom 
   }
@@ -19,10 +19,12 @@
   }
 
   .sidebar {
-    padding-left:0px;
+    padding-left: 0px;
   }
 
-  h3{padding:0px;}
+  h3 {
+    padding: 0px;
+  }
 
   //@media only screen and (max-width: 80em) and (min-width: 60rem) {
   .intro header h1 {
@@ -50,7 +52,7 @@
     //margin-top:5em;
     position: fixed;
     top: 550px;
-    left: 71%;
+    right: 25px;
     //bottom:50px;
     z-index: 500;
   }
@@ -102,7 +104,7 @@
   .summary,
   .preamble {
     font-size: smaller;
-    margin:0 .5em;
+    margin: 0 .5em;
   }
 
   .intro header {
@@ -113,7 +115,6 @@
   .summary {
     grid-column: 1 / 2;
     grid-row: 2 / 4;
-    padding-right: 2em;
 
   }
 
@@ -204,7 +205,7 @@
   .supporting {
     position: absolute;
     left: 26%;
-    top: 130px;
+    top: 200px;
     width: 425px;
     z-index: 1;
     height: 280px;
@@ -229,22 +230,20 @@
 
   .explanation {
     background: lighten($color-1, 45%);
-    //z-index: 1;
-    //overflow: hidden;
-    animation: zchange 60s ease-in-out infinite; 
+    animation: zchange 60s linear infinite;
   }
 
   @keyframes zchange {
     0% {
-      margin-top: 0px;
+      margin-top: -15px;
     }
 
     50% {
-      margin-top: -2040px;
+      margin-top: -2080px;
     }
 
-    100%{
-      margin-top: 0px;
+    100% {
+      margin-top: -15px;
     }
   }
 
@@ -311,19 +310,21 @@
   }
 */
 
-.explanation p:nth-child(2)::after {
-  display:none;
+  .explanation p:nth-child(2)::after {
+    display: none;
+  }
+
+  .participation p:nth-child(2)::after {
+    display: none;
+  }
+
+  .requirements p:nth-child(2)::after {
+    display: none;
+  }
+
 }
 
-.participation p:nth-child(2)::after {
-  display:none;
-}
-
-.requirements p:nth-child(2)::after {
- display:none;
-}
-
-} /*end of media 61rem min*/
+/*end of media 61rem min*/
 
 @media only screen and (min-width: 63.5rem) {
 
@@ -333,9 +334,18 @@
 
   .supporting {
     left: 27%;
+    top: 140px;
   }
 
-} /* end of media 63.5rem min */
+  /*
+  .extra5, .extra1{
+    display:none;
+  }*/
+
+
+}
+
+/* end of media 63.5rem min */
 
 @media only screen and (min-width: 66.0rem) {
 
@@ -347,7 +357,14 @@
     left: 28%;
   }
 
-} /* end of media 66.0rem min */
+  .extra5,
+  .extra1 {
+    display: none;
+  }
+
+}
+
+/* end of media 66.0rem min */
 
 @media only screen and (min-width: 68.75rem) {
 
@@ -360,7 +377,14 @@
     height: 310px;
   }
 
-} /* end of media 68.75rem min */
+  .extra5,
+  .extra1 {
+    display: none;
+  }
+
+}
+
+/* end of media 68.75rem min */
 
 @media only screen and (min-width: 70.625rem) {
 
@@ -372,7 +396,15 @@
     left: 28%;
   }
 
-} /* end of media 70.625rem min */
+  .extra5,
+  .extra1 {
+    display: none;
+  }
+
+
+}
+
+/* end of media 70.625rem min */
 
 @media only screen and (min-width: 76.5rem) {
 
@@ -386,5 +418,12 @@
     left: 27.5%;
   }
 
-} /* end of media 76.5rem min */
+  .extra5,
+  .extra1 {
+    display: none;
+  }
 
+
+}
+
+/* end of media 76.5rem min */
