@@ -1,39 +1,20 @@
 @media only screen and (min-width: 61rem) {
   @import "animationfish";
   @import "LargeTitleAnimation";
-   
 
   body {
     padding: 5px;
     max-width: 80rem;
-    position: relative; // for extra divs at bottom 
-  }
-
-  body {
+    position: relative;
     background: url(images/darker-ocean.jpg) no-repeat center center fixed;
     background-size: cover;
     height: 100%;
     overflow: hidden;
     color: white;
-    // position: fixed;
   }
 
-  .sidebar {
-    padding-left:0px;
-  }
-
-  h3{padding:0px;}
-
-  //@media only screen and (max-width: 80em) and (min-width: 60rem) {
-  .intro header h1 {
-    font-size: 6em;
-  }
-
-  .intro header h2 {
-    font-size: 2em;
-    //color: $color-3;
-    color: darken($color-1, 5%);
-    //text-shadow: 1px 1px 2px gray, 0 0 25px black, 0 0 5px grey;
+  h3 {
+    padding: 0px;
   }
 
   .page-wrapper {
@@ -42,52 +23,19 @@
     justify-content: center;
     grid-template-columns: 25% 50% 25%;
     grid-template-rows: 200px repeat(9, auto);
-  }
 
-  footer {
-    //grid-column:3/4;
-    //grid-row:1/2;
-    //margin-top:5em;
-    position: fixed;
-    top: 550px;
-    left: 71%;
-    //bottom:50px;
-    z-index: 500;
-  }
-
-  .main footer {
-    justify-content: center;
-    display: flex;
-    transform: scale(0.8);
-    //z-index:-1;
-  }
-
-  .main footer a {
-    background-color: #03a9f4;
-    color: #FFFFFF;
-    padding: 12px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 12px;
-    margin: 4px 5px;
-    background: linear-gradient(to top, #03a9f4, #2f5f63);
-    border-radius: 50%;
-    border: solid 1px #2f5f63;
-    box-shadow: 4px 4px 0 #1b383b;
-    text-shadow: 0 2px 2px rgba(255, 255, 255, 0.2);
-    width: 60px;
-  }
-
-  .main footer a:hover {
-    color: $color-3;
-    transform: scale(1.2);
-    transition: .5s ease-in;
-  }
-
-  .main footer a:focus,
-  a:active {
-    color: #013E75;
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("images/new-tv.png");
+      background-repeat: no-repeat;
+      z-index: 3;
+      top: 216px;
+      left: 17%;
+      width: 650px;
+      height: 567px;
+      transform: scale(0.8)
+    }
   }
 
   .intro {
@@ -97,17 +45,26 @@
     grid-template-columns: 25% 75%;
     grid-template-rows: 200px repeat(9, auto);
     margin-left: 1em;
+
+    header {
+      grid-column: 1 / 3;
+      grid-row: 1 / 3;
+
+      h1 {
+        font-size: 6em;
+      }
+
+      h2 {
+        font-size: 2em;
+        color: darken($color-1, 5%);
+      }
+    }
   }
 
   .summary,
   .preamble {
     font-size: smaller;
-    margin:0 .5em;
-  }
-
-  .intro header {
-    grid-column: 1 / 3;
-    grid-row: 1 / 3;
+    margin: 0 .5em;
   }
 
   .summary {
@@ -115,10 +72,9 @@
     grid-row: 2 / 4;
     padding-right: 2em;
 
-  }
-
-  .summary p:first-child {
-    margin-top: 0;
+    p:first-child {
+      margin-top: 0;
+    }
   }
 
   .preamble {
@@ -127,34 +83,140 @@
   }
 
   .supporting {
-    position: relative;
+    position: absolute;
+    left: 26%;
+    top: 130px;
+    width: 425px;
+    z-index: 1;
+    height: 280px;
+    padding-left: 25px;
+    overflow: hidden;
+    margin-top: 10em;
+
+    h3 {
+      padding-top: .5em;
+      margin: .5em;
+    }
+
+    div {
+      color: darken($color-1, 5%);
+      padding: 10px 50px;
+
+      &:first-of-type {
+        padding-top: 30px;
+      }
+
+      &:last-of-type {
+        padding-bottom: 50px;
+      }
+    }
   }
 
   .explanation {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    background: lighten($color-1, 45%);
+    animation: zchange 60s ease-in-out infinite;
+
+    p:nth-child(2)::after {
+      display: none;
+    }
+  }
+
+  @keyframes zchange {
+    0% {
+      margin-top: 0px;
+    }
+
+    50% {
+      margin-top: -2040px;
+    }
+
+    100% {
+      margin-top: 0px;
+    }
   }
 
   .participation {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    background: $color-2;
+
+    p:nth-child(2)::after {
+      display: none;
+    }
   }
 
   .benefits {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    background: lighten($color-3, 18%);
   }
 
   .requirements {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    background: $color-4;
+
+    a,
+    .participation a {
+      color: darken($color-3, 5%)
+    }
+
+    p:nth-child(2)::after {
+      display: none;
+    }
   }
 
+  .participation h3,
+  .benefits h3,
+  .requirements h3 {
+    color: darken($color-1, 5%);
+  }
 
-  aside.sidebar {
+  footer {
+    position: fixed;
+    top: 550px;
+    left: 71%;
+    z-index: 500;
+    justify-content: center;
+    display: flex;
+    transform: scale(0.8);
+
+    a {
+      background-color: #03a9f4;
+      color: #FFFFFF;
+      padding: 12px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 12px;
+      margin: 4px 5px;
+      background: linear-gradient(to top, #03a9f4, #2f5f63);
+      border-radius: 50%;
+      border: solid 1px #2f5f63;
+      box-shadow: 4px 4px 0 #1b383b;
+      text-shadow: 0 2px 2px rgba(255, 255, 255, 0.2);
+      width: 60px;
+
+      &:focus {
+        color: #013E75;
+      }
+
+      &:hover {
+        color: $color-3;
+        transform: scale(1.2);
+        transition: .5s ease-in;
+      }
+    }
+  }
+
+  .sidebar {
     grid-column: 3 / 4;
     grid-row: 1 / 11;
     margin-top: 15em;
+    padding-left: 0;
+    font-size: small;
   }
 
   .wrapper {
@@ -181,210 +243,63 @@
     grid-column: 1 / 2;
     grid-row: 3 / 4;
   }
-
-  .summary,
-  .preamble,
-  .sidebar {
-    font-size: small;
-  }
-
-  .page-wrapper::before {
-    content: "";
-    position: absolute;
-    background-image: url("images/new-tv.png");
-    background-repeat: no-repeat;
-    z-index: 3;
-    top: 216px;
-    left: 17%;
-    width: 650px;
-    height: 567px;
-    transform: scale(0.8)
-  }
-
-  .supporting {
-    position: absolute;
-    left: 26%;
-    top: 130px;
-    width: 425px;
-    z-index: 1;
-    height: 280px;
-    padding-left: 25px;
-    overflow: hidden;
-    margin-top: 10em;
-  }
-
-  .supporting div {
-    color: darken($color-1, 5%);
-    padding: 10px 50px 10px 50px;
-    box-sizing: border-box;
-  }
-
-  .supporting div:last-of-type {
-    padding-bottom: 50px;
-  }
-
-  .supporting div:first-of-type {
-    padding-top: 30px;
-  }
-
-  .explanation {
-    background: lighten($color-1, 45%);
-    //z-index: 1;
-    //overflow: hidden;
-    animation: zchange 60s ease-in-out infinite; 
-  }
-
-  @keyframes zchange {
-    0% {
-      margin-top: 0px;
-    }
-
-    50% {
-      margin-top: -2040px;
-    }
-
-    100%{
-      margin-top: 0px;
-    }
-  }
-
-  // .sequenced-thing {
-  //   animation: 
-  //     sequence1 1s 2,
-  //     sequence2 3s 1s 1 forwards;
-  // }
-
-  // consider stepping into the index. You would start the first at 10, then go to 5, the one at 9 will go to 4 the one at 8 will go to 3, etc. until the one at 6 will go to 1, with it scrolling first and then sequenced to the next one
-
-  .participation {
-    background: $color-2;
-    //z-index: 2;
-    //overflow: hidden;
-    //animation: zchange 2s infinite linear; //slide 8s linear infinite,
-  }
-
-  .participation h3,
-  .benefits h3 {
-    color: darken($color-1, 5%);
-    padding-top: .5em;
-    margin: .5em;
-  }
-
-  .requirements h3,
-  .explanation h3 {
-    padding-top: .5em;
-    margin: .5em;
-  }
-
-  .benefits {
-    background: lighten($color-3, 18%);
-    //  z-index: 3;
-    //overflow: hidden;
-    // animation: zchange 2s infinite linear; //slide 8s linear infinite,
-  }
-
-  .requirements {
-    background: $color-4;
-    //z-index: 4;
-    // overflow: hidden;
-    // animation: zchange 2s infinite linear; //slide 8s linear infinite,
-  }
-
-  .requirements h3 {
-    color: darken($color-1, 5%)
-  }
-
-  .requirements a,
-  .participation a {
-    color: darken($color-3, 5%)
-  }
-
-  /*
-  @keyframes animatebubble {
-    0% {
-      margin-top: 0%;
-    }
-
-    100% {
-      margin-top: -150%;
-    }
-  }
-*/
-
-.explanation p:nth-child(2)::after {
-  display:none;
-}
-
-.participation p:nth-child(2)::after {
-  display:none;
-}
-
-.requirements p:nth-child(2)::after {
- display:none;
-}
-
 } /*end of media 61rem min*/
 
-@media only screen and (min-width: 63.5rem) {
+/* small tweaks in large view */
+@media only screen {
 
-  .page-wrapper::before {
-    left: 18%;
+  @media (min-width: 63.5rem) {
+    .page-wrapper::before {
+      left: 18%;
+    }
+
+    .supporting {
+      left: 27%;
+    }
   }
 
-  .supporting {
-    left: 27%;
+  @media (min-width: 66rem) {
+    .page-wrapper::before {
+      left: 20%;
+    }
+
+    .supporting {
+      left: 28%;
+    }
   }
 
-} /* end of media 63.5rem min */
+  @media (min-width: 68.75rem) {
+    .page-wrapper::before {
+      transform: scale(.9);
+    }
 
-@media only screen and (min-width: 66.0rem) {
-
-  .page-wrapper::before {
-    left: 20%;
+    .supporting {
+      top: 100px;
+      height: 310px;
+    }
   }
 
-  .supporting {
-    left: 28%;
+  @media (min-width: 70.625rem) {
+    .page-wrapper::before {
+      left: 21.5%;
+    }
+
+    .supporting {
+      left: 28%;
+    }
   }
 
-} /* end of media 66.0rem min */
+  @media (min-width: 76.5rem) {
+    .page-wrapper::before {
+      transform: scale(1.0);
+      left: 24%;
+    }
 
-@media only screen and (min-width: 68.75rem) {
-
-  .page-wrapper::before {
-    transform: scale(.9);
+    .supporting {
+      top: 80px;
+      height: 330px;
+      width: 500px;
+      left: 27.5%;
+    }
   }
-
-  .supporting {
-    top: 100px;
-    height: 310px;
-  }
-
-} /* end of media 68.75rem min */
-
-@media only screen and (min-width: 70.625rem) {
-
-  .page-wrapper::before {
-    left: 21.5%;
-  }
-
-  .supporting {
-    left: 28%;
-  }
-
-} /* end of media 70.625rem min */
-
-@media only screen and (min-width: 76.5rem) {
-
-  .page-wrapper::before {
-    transform: scale(1.0);
-    left: 24%;
-  }
-
-  .supporting {
-    width: 500px;
-    left: 27.5%;
-  }
-
-} /* end of media 76.5rem min */
-
+}

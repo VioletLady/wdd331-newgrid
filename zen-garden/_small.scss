@@ -11,12 +11,12 @@ body {
   font-size: 12px;
 }
 
-.intro header h1, .intro header h2 {
+.intro header h1,
+.intro header h2 {
   text-align: center;
 }
 
 p {
-  //margin-top: 0.5em;
   line-height: 140%;
 }
 
@@ -31,71 +31,75 @@ p {
     list-style-type: none;
   }
 
-
   ul {
     margin-top: 0.5em;
   }
-
 }
 
-@media only screen and (min-width : 20rem){
+@media only screen and (min-width : 20rem) {
 
-  .intro header h1{
+  .intro header h1 {
     -webkit-text-stroke: 1px #03a9f4;
   }
 
-.sidebar, .sidebar h3{
-  text-align:right;}
-
-.intro, .supporting, .sidebar {
-  padding: 1em 2em 1em 2em;
-}
-
-.wrapper{
-  text-align:right;
-}
-  .page-wrapper{
-    display:block;
-    padding:2em 0;
+  .sidebar,
+  .sidebar h3 {
+    text-align: right;
   }
 
-    h3{
-      padding:1em;
-      text-align:center;
-    }
+  .intro,
+  .supporting,
+  .sidebar {
+    padding: 1em 2em;
+  }
+
+  .wrapper {
+    text-align: right;
+  }
+
+  .page-wrapper {
+    display: block;
+    padding: 2em 0;
+  }
+
+  h3 {
+    padding: 1em;
+    text-align: center;
+  }
 
   .main footer a {
     font-weight: 100;
     padding: 10px;
     font-size: 10px;
-    margin: 2px 6px; 
+    margin: 2px 6px;
     border-radius: 50%;
     border: solid 1px #2f5f63;
     transition: 1s ease-in;
   }
-  
+
   footer::after {
     content: "";
-    display:block;
+    display: block;
     position: absolute;
     background-image: url("images/crab_PNG27.png");
     background-repeat: no-repeat;
     width: 180px;
     height: 152px;
-    left:15px;
-   transform: rotate(45deg);
-   animation: swing ease-in-out 1s infinite alternate;
-   transform-origin:center -20px;
-   margin-top:18em;
-   margin-left:1.5em;
+    left: 15px;
+    transform: rotate(45deg);
+    animation: swing ease-in-out 1s infinite alternate;
+    transform-origin: center -20px;
+    margin-top: 18em;
+    margin-left: 1.5em;
   }
 
-@keyframes swing {
-  0%{ transform:rotate(3deg);}
+  @keyframes swing {
+    0% {
+      transform: rotate(3deg);
+    }
 
-  100%{transform:rotate(-3deg);}
+    100% {
+      transform: rotate(-3deg);
+    }
+  }
 }
-
-}
-
-

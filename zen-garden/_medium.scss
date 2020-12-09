@@ -1,30 +1,28 @@
+@media only screen and (min-width : 50rem) {
 
-@media only screen and (min-width : 40rem){
+  @import "footer";
 
-@import "footer";
+  .intro header h1 {
+    -webkit-text-stroke: 2px #03a9f4;
+  }
 
-.intro header h1{
-  -webkit-text-stroke: 2px #03a9f4;
-}
+  body {
+    background: linear-gradient(rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)),
+      url(images/darker-ocean.jpg) no-repeat center fixed;
+    background-size: cover;
+    height: 100%;
+    color: white;
+    margin: 0 auto;
+  }
 
-body {
-  background: linear-gradient(
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)
-  ),
-  url(images/darker-ocean.jpg) no-repeat center fixed;
-  background-size: cover;
-  height: 100%;
-  color: white;
-  margin: 0 auto;
-    //padding:5em;
-}
+  h3 {
+    text-align: center;
+  }
 
-  h3{
-    //padding-top:1em;
-    text-align:center;}
-
-  .sidebar h3{text-align:left;}
+  .sidebar h3 {
+    text-align: left;
+  }
 
   .page-wrapper {
     display: grid;
@@ -36,14 +34,14 @@ body {
 
   .intro {
     grid-column: 1 / 3;
-    grid-row: 1 / 2;     
+    grid-row: 1 / 2;
   }
 
   .sidebar {
     grid-column: 1 / 3;
     grid-row: 3 / 4;
     font-size: 12px;
-    padding-left:7em;
+    padding-left: 7em;
   }
 
   .wrapper {
@@ -57,7 +55,6 @@ body {
   .design-selection {
     grid-column: 2 / 3;
     grid-row: 1 / 3;
-    
   }
 
   .design-archives {
@@ -65,93 +62,78 @@ body {
     grid-row: 1 / 2;
   }
 
-  .zen-resources { 
+  .zen-resources {
     grid-column: 3 / 4;
     grid-row: 2 / 3;
   }
 
   .supporting {
-    grid-column: 1 / 3;        
+    grid-column: 1 / 3;
     grid-row: 2 / 3;
   }
 
-  .explanation p:nth-child(2)::after {
-    background-image:url(images/fish-11861.png);
-    background-repeat: no-repeat;
-    content: "";
-    float:left;
-    shape-outside: circle(31% at 45%);
-    margin:15px;
-		width: 500px;
-		height:300px;
-    transform: scale(0.7);
-    z-index:1;
-    transition: ease-in-out 2s;
+  .explanation p:nth-child(2) {
+    &::after {
+      background-image: url(images/fish-11861.png);
+      background-repeat: no-repeat;
+      content: "";
+      float: left;
+      shape-outside: circle(31% at 45%);
+      margin: 15px;
+      width: 500px;
+      height: 300px;
+      transform: scale(0.7);
+      z-index: 1;
+      transition: ease-in-out 2s;
+    }
+
+    &:hover::after {
+      background-image: url(images/hawaiian-fish.png);
+      z-index: 2;
+    }
   }
 
-  .explanation p:nth-child(2):hover::after {
-    background-image:url(images/hawaiian-fish.png);
-    z-index: 2;
-    width:500px;
-    height:300px;
-    shape-outside: circle(31% at 45%);
-    transition: ease-in-out 2s;
+  .participation p:nth-child(2) {
+    &::after {
+      background-image: url(images/fish-11908.png);
+      background-repeat: no-repeat;
+      content: "";
+      float: right;
+      shape-outside: circle(38% at 50%);
+      margin: 15px;
+      width: 400px;
+      height: 290px;
+      transform: scale(0.7);
+      transition: ease-in-out 2s;
+    }
+
+    &:hover::after {
+      background-image: url(images/fishes.png);
+    }
   }
 
-  .participation p:nth-child(2)::after {
-    background-image:url(images/fish-11908.png);
-    background-repeat: no-repeat;
-    content: "";
-    float:right;
-    shape-outside: circle(38% at 50%);
-    margin:15px;
-		width: 400px;
-		height:290px;
-    transform: scale(0.7);
-    transition: ease-in-out 2s;
-  }
+  .requirements p:nth-child(2) {
+    &::after {
+      background-image: url(images/goldfish.png);
+      background-repeat: no-repeat;
+      content: "";
+      float: left;
+      shape-outside: circle(30% at 55%);
+      margin: 15px;
+      width: 500px;
+      height: 500px;
+      transform: scale(0.6);
+      transition: ease-in-out 2s;
+    }
 
-  .participation p:nth-child(2):hover::after {
-    background-image:url(images/fishes.png);
-    background-repeat: no-repeat;
-    content: "";
-    float:right;
-    shape-outside: circle(38% at 50%);
-    margin:15px;
-		width: 400px;
-		height:290px;
-		transform: scale(0.7);
-    transition: ease-in-out 2s;
-  }
-
-  .requirements p:nth-child(2)::after {
-    background-image:url(images/goldfish.png);
-    background-repeat: no-repeat;
-    content: "";
-    float:left;
-    shape-outside: circle(30% at 55%);
-    margin:15px;
-		width: 500px;
-		height:500px;
-    transform: scale(0.6);
-    transition: ease-in-out 2s;
-  }
-
-  .requirements p:nth-child(2):hover::after {
-    background-image:url(images/golfish2.png);
-    background-repeat: no-repeat;
-    content: "";
-    float:left;
-    shape-outside: circle(30% at 55%);
-    margin:15px;
-		width: 500px;
-		height:300px;
-    transform: scale(0.7);
-    transition: ease-in-out 2s;
+    &:hover::after {
+      background-image: url(images/golfish2.png);
+      transform: scale(0.7);
+    }
   }
 
   footer::after {
-  display:none;
+    display: none;
   }
-
 }
+  
