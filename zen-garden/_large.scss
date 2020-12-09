@@ -4,18 +4,14 @@
 
 
   body {
-    //padding: 5px;
-    max-width: 80rem;
-    position: relative; // for extra divs at bottom 
-  }
-
-  body {
     background: url(images/darker-ocean.jpg) no-repeat center center fixed;
     background-size: cover;
     height: 100%;
     overflow: hidden;
     color: white;
     // position: fixed;
+    max-width: 80rem;
+    position: relative; // for extra divs at bottom 
   }
 
   .sidebar {
@@ -336,12 +332,6 @@
     left: 27%;
     top: 140px;
   }
-
-  /*
-  .extra5, .extra1{
-    display:none;
-  }*/
-
 
 }
 
