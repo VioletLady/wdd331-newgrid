@@ -8,7 +8,7 @@
     height: 200px;
     top: 150px;
     left: 0;
-    animation: slide-fish 8s forwards infinite;
+    animation: slidefish 8s forwards infinite;
     overflow: hidden;
   }
 
@@ -17,7 +17,7 @@
     background-repeat: no-repeat;
     z-index: 3;
     position: fixed;
-    animation: slide-fish 10s reverse infinite;
+    animation: slidefish 10s reverse infinite;
     width: 200px;
     height: 200px;
     left: -100px;
@@ -25,7 +25,7 @@
     overflow: hidden;
   }
 
-  @keyframes slide-fish {
+  @keyframes slidefish {
     0% {
       left: -400px;
     }
@@ -52,14 +52,12 @@
     animation: animatebubble 5s linear reverse infinite;
     width: 500px;
     height: 500px;
-    top: 0px;
     left: 100px;
   }
 
   // svg bubbles
   .extra6 {
     position: absolute;
-    top: 0px;
     left: 650px;
     width: 500px;
     height: 500px;
@@ -73,12 +71,11 @@
 
   @keyframes animatebubble {
     0% {
-      top:0px;opacity:0.6 
+      top:0px;opacity:0.6; 
     }
 
     100% {
-      top: 300px;opacity:0
-      ;
+      top: 300px;opacity:0;
     }
   }
 
