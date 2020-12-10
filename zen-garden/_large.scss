@@ -12,8 +12,7 @@
     max-width: 80rem;
     position: relative;
     background: url(images/darker-ocean.jpg) no-repeat center center fixed;
-    background-size: cover;
-    //overflow: hidden;
+    background-size: cover;    
     color: $color-5;
 
     h3 {
@@ -163,12 +162,14 @@
 
   footer {
     position: fixed;
-    top: 550px;
-    left: 71%;
+    top: 335px;
+    left: 88%;
     z-index: 1;
+    flex-direction: column;
     transform: scale(0.7);
 
     a {
+      margin: 8px 8px;
       transition: .5s ease-in;
 
       &:hover {
@@ -293,10 +294,17 @@
     }
   }
 
+  @media (min-width: 87.5rem) {
+
+    footer {
+      left: 82%;
+    }
+  }
+
   @media (min-width: 100rem) {
 
     footer {
-      left: 65%;
+      left: 78%;
     }
   }
 }
