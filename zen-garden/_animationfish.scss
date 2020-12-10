@@ -45,34 +45,41 @@
 
   // png bubbles
   .extra4 {
+    position: absolute;
     background-image: url("images/bubbles.png");
     background-repeat: no-repeat;
     z-index: 1;
-    position: fixed;
-    animation: animatebubble 25s linear infinite;
+    animation: animatebubble 5s linear reverse infinite;
     width: 500px;
     height: 500px;
+    top: 0px;
+    left: 100px;
+    opacity: 0.8;
   }
 
   // svg bubbles
   .extra6 {
+    position: absolute;
+    top: 0px;
+    left: 650px;
     width: 500px;
     height: 500px;
     opacity: 0.2;
     background-image: url("images/bubbles.svg");
     background-repeat: no-repeat;
-    animation: animatebubble 25s linear infinite;
-    animation-delay: 3s;
-    transform: scale(0.8);
+    animation: animatebubble 3s linear reverse infinite;
+    transform: scale(0.9);
+    z-index:-3;
   }
 
   @keyframes animatebubble {
     0% {
-      margin-top: 100%;
+      top: 0%;opacity:0.6 
     }
 
     100% {
-      margin-top: -300%;
+      top: 50%;opacity:0
+      ;
     }
   }
-  
+
