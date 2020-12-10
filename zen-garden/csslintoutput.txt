@@ -1,0 +1,154 @@
+
+style.css
+   1:3   ×  Expected whitespace after "/*"                                                                                                 comment-whitespace-inside                        
+   1:19  ×  Expected whitespace before "*/"                                                                                                comment-whitespace-inside                        
+   3:1   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+   9:10  ×  Expected "#E1B923" to be "#e1b923"                                                                                             color-hex-case                                   
+  14:10  ×  Expected "#D44013" to be "#d44013"                                                                                             color-hex-case                                   
+  15:22  ×  Expected "#99CEDC" to be "#99cedc"                                                                                             color-hex-case                                   
+  20:10  ×  Expected "#FFFFFF" to be "#ffffff"                                                                                             color-hex-case                                   
+  20:10  ×  Expected "#FFFFFF" to be "#FFF"                                                                                                color-hex-length                                 
+  21:21  ×  Expected "#D44013" to be "#d44013"                                                                                             color-hex-case                                   
+  26:10  ×  Expected "#E1B923" to be "#e1b923"                                                                                             color-hex-case                                   
+  32:12  ×  Expected "#E1B923" to be "#e1b923"                                                                                             color-hex-case                                   
+  34:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+  35:12  ×  Expected "#D44013" to be "#d44013"                                                                                             color-hex-case                                   
+  37:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+  38:12  ×  Expected "#E1B923" to be "#e1b923"                                                                                             color-hex-case                                   
+  50:10  ×  Expected "#E1B923" to be "#e1b923"                                                                                             color-hex-case                                   
+  63:1   ×  Unexpected duplicate selector "h3", first used at line 25                                                                      no-duplicate-selectors                           
+  68:10  ×  Expected "#E1B923" to be "#e1b923"                                                                                             color-hex-case                                   
+  70:38  ×  Expected "#E1B923" to be "#e1b923"                                                                                             color-hex-case                                   
+  70:47  ×  Expected "#FFFFFF" to be "#ffffff"                                                                                             color-hex-case                                   
+  70:47  ×  Expected "#FFFFFF" to be "#FFF"                                                                                                color-hex-length                                 
+  70:56  ×  Expected "#E1B923" to be "#e1b923"                                                                                             color-hex-case                                   
+  89:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 100:1   ×  Expected selector "footer a" to come before selector "a:link"                                                                  no-descending-specificity                        
+ 100:1   ×  Expected selector "footer a" to come before selector "a:visited"                                                               no-descending-specificity                        
+ 100:1   ×  Expected selector "footer a" to come before selector "a:hover"                                                                 no-descending-specificity                        
+ 100:1   ×  Expected selector "footer a" to come before selector "a:focus"                                                                 no-descending-specificity                        
+ 100:1   ×  Expected selector "footer a" to come before selector "a:active"                                                                no-descending-specificity                        
+ 103:10  ×  Expected "#FFFFFF" to be "#ffffff"                                                                                             color-hex-case                                   
+ 103:10  ×  Expected "#FFFFFF" to be "#FFF"                                                                                                color-hex-length                                 
+ 109:3   ×  Unexpected shorthand "background" after "background-color"                                                                     declaration-block-no-shorthand-property-overrides
+ 119:10  ×  Expected "#D44013" to be "#d44013"                                                                                             color-hex-case                                   
+ 123:15  ×  Expected newline after ","                                                                                                     selector-list-comma-newline-after                
+ 124:10  ×  Expected "#013E75" to be "#013e75"                                                                                             color-hex-case                                   
+ 135:1   ×  Unexpected duplicate selector "body", first used at line 42                                                                    no-duplicate-selectors                           
+ 146:1   ×  Unexpected duplicate selector ".intro header h1, .intro header h2", first used at line 80                                      no-duplicate-selectors                           
+ 175:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 179:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 184:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 187:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 191:3   ×  Expected selector "h3" to come before selector ".sidebar h3"                                                                   no-descending-specificity                        
+ 191:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 195:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 210:3   ×  Expected empty line before at-rule                                                                                             at-rule-empty-line-before                        
+ 214:5   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 224:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 227:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 230:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 237:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 241:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 247:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 254:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 258:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 262:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 266:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 270:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 283:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 287:3   ×  Expected selector ".participation p:nth-child(2)::after" to come before selector ".explanation p:nth-child(2):hover::after"    no-descending-specificity                        
+ 287:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 299:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 302:3   ×  Expected selector ".requirements p:nth-child(2)::after" to come before selector ".explanation p:nth-child(2):hover::after"     no-descending-specificity                        
+ 302:3   ×  Expected selector ".requirements p:nth-child(2)::after" to come before selector ".participation p:nth-child(2):hover::after"   no-descending-specificity                        
+ 302:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 314:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 318:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 324:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 344:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 356:3   ×  Expected empty line before at-rule                                                                                             at-rule-empty-line-before                        
+ 360:5   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 363:5   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 366:5   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 370:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 379:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 389:3   ×  Expected empty line before at-rule                                                                                             at-rule-empty-line-before                        
+ 393:5   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 397:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 398:30  ×  Expected "#013E75" to be "#013e75"                                                                                             color-hex-case                                   
+ 400:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 402:12  ×  Expected "#D44013" to be "#d44013"                                                                                             color-hex-case                                   
+ 404:3   ×  Expected empty line before at-rule                                                                                             at-rule-empty-line-before                        
+ 410:5   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 413:5   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 418:3   ×  Expected empty line before at-rule                                                                                             at-rule-empty-line-before                        
+ 423:5   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 426:5   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 429:5   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 432:5   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 435:5   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 438:5   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 441:5   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 444:5   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 448:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 458:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 459:15  ×  Unexpected unit                                                                                                                length-zero-no-unit                              
+ 461:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 468:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 480:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 488:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 492:3   ×  Unexpected duplicate selector ".intro header h1", first used at line 397                                                       no-duplicate-selectors                           
+ 492:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 495:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 499:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 502:15  ×  Expected a leading zero                                                                                                        number-leading-zero                              
+ 504:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 508:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 511:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 515:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 526:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 527:18  ×  Expected a leading zero                                                                                                        number-leading-zero                              
+ 528:13  ×  Expected a leading zero                                                                                                        number-leading-zero                              
+ 530:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 534:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 537:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 540:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 546:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 549:3   ×  Expected empty line before at-rule                                                                                             at-rule-empty-line-before                        
+ 553:5   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 556:5   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 557:20  ×  Unexpected unit                                                                                                                length-zero-no-unit                              
+ 560:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 563:17  ×  Expected "#99CEDC" to be "#99cedc"                                                                                             color-hex-case                                   
+ 565:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 568:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 573:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 576:17  ×  Expected "#E1B923" to be "#e1b923"                                                                                             color-hex-case                                   
+ 578:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 582:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 585:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 590:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 597:3   ×  Expected selector "footer a" to come before selector ".requirements a"                                                         no-descending-specificity                        
+ 597:3   ×  Expected selector "footer a" to come before selector ".requirements .participation a"                                          no-descending-specificity                        
+ 597:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 598:17  ×  Expected a leading zero                                                                                                        number-leading-zero                              
+ 600:3   ×  Expected selector "footer a:hover" to come before selector ".requirements .participation a"                                    no-descending-specificity                        
+ 600:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 601:12  ×  Expected "#D44013" to be "#d44013"                                                                                             color-hex-case                                   
+ 604:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 611:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 620:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 624:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 628:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 634:3   ×  Expected whitespace after "/*"                                                                                                 comment-whitespace-inside                        
+ 634:24  ×  Expected whitespace before "*/"                                                                                                comment-whitespace-inside                        
+ 635:1   ×  Expected empty line before comment                                                                                             comment-empty-line-before                        
+ 640:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 649:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 658:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 668:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 678:3   ×  Expected empty line before rule                                                                                                rule-empty-line-before                           
+ 692:1   ×  Expected selector "li" to come before selector ".wrapper li"                                                                   no-descending-specificity                        
+ 694:39  ×  Unexpected missing end-of-source newline                                                                                       no-missing-end-of-source-newline
+

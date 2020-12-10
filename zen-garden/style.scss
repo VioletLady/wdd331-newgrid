@@ -2,6 +2,7 @@
 @import "typography";
 @import "title";
 @import "footer";
+
 // reset
 *,
 *::before,
@@ -11,7 +12,6 @@
   padding: 0;
 }
 
-
 // media queries
 @import "small";
 @import "medium";
@@ -20,5 +20,3 @@
 li {
   list-style-type: none;
 }
-
-

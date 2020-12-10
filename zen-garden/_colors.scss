@@ -8,14 +8,11 @@ $color-5: #FFFFFF; // White
 // additional colors
 $success: #6fce72; // green
 $alert: $color-3;
-/*
-body {
-    background: darken($color-1, 5%);
-    color: $color-5;
-  }*/
 
 /*Navigation colors*/
-a{cursor: url(https://cur.cursors-4u.net/nature/nat-8/nat710.cur), auto !important;}
+a {
+  cursor: url(https://cur.cursors-4u.net/nature/nat-8/nat710.cur), auto !important;
+}
 
 a:link,
 a:visited {
@@ -41,7 +38,15 @@ h3 {
 }
 
 @keyframes myh3 {
-  0% {color: $color-4;}
-  50% {color: $color-3;}
-  100% {color: $color-4;}
+  0% {
+    color: $color-4;
+  }
+
+  50% {
+    color: $color-3;
+  }
+
+  100% {
+    color: $color-4;
+  }
 }
