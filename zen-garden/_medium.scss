@@ -1,7 +1,7 @@
 @media only screen and (min-width : 50rem) {
 
   .intro header h1 {
-    -webkit-text-stroke: 2px #03a9f4;
+    -webkit-text-stroke: 2px $color-6;
   }
 
   body {
@@ -123,7 +123,7 @@
   footer a {
     font-weight: bold;
     padding: 12px;
-    font-size: 15px; 
+    font-size: 15px;
     margin: 4px 8px;
   }
 
@@ -131,4 +131,3 @@
     display: none;
   }
 } /* end media query */
-  
