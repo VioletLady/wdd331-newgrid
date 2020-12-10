@@ -92,8 +92,7 @@ h3 {
   -webkit-text-stroke: 2px #01315c;
 }
 
-.intro header h1,
-.intro header h2 {
+.intro header h1, .intro header h2 {
   text-align: center;
 }
 
@@ -478,7 +477,7 @@ p {
     position: absolute;
     background-image: url("images/bubbles.png");
     background-repeat: no-repeat;
-    z-index: 1;
+    z-index: -5;
     animation: animatebubble 5s linear reverse infinite;
     width: 500px;
     height: 500px;
@@ -620,6 +619,9 @@ p {
       opacity: 1;
     }
   }
+  body, html {
+    height: 100%;
+  }
   body {
     padding: 5px;
     max-width: 80rem;
@@ -632,6 +634,7 @@ p {
     padding: 0px;
   }
   .page-wrapper {
+    height: 100%;
     display: -ms-grid;
     display: grid;
     -webkit-box-align: start;
