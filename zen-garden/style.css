@@ -1,4 +1,3 @@
-/*Navigation colors*/
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,400&family=Poppins:wght@300;400;700;900&display=swap");
 a {
   cursor: url(https://cur.cursors-4u.net/nature/nat-8/nat710.cur), auto !important;
@@ -6,39 +5,38 @@ a {
 
 a:link,
 a:visited {
-  color: #E1B923;
+  color: #e1b923;
   text-decoration: none;
 }
 
 a:hover {
-  color: #D44013;
-  border: 1px dotted #99CEDC;
+  color: #d44013;
+  border: 1px dotted #99cedc;
 }
 
 a:focus,
 a:active {
-  color: #FFFFFF;
-  background-color: #D44013;
+  color: #fff;
+  background-color: #d44013;
   text-decoration: underline;
 }
 
 h3 {
-  color: #E1B923;
+  color: #e1b923;
   animation: myh3 5s ease-in-out infinite;
 }
 
 @keyframes myh3 {
   0% {
-    color: #E1B923;
+    color: #e1b923;
   }
   50% {
-    color: #D44013;
+    color: #d44013;
   }
   100% {
-    color: #E1B923;
+    color: #e1b923;
   }
 }
-
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -47,7 +45,7 @@ h1,
 h2,
 h3 {
   font-family: "Merriweather", serif;
-  color: #E1B923;
+  color: #e1b923;
 }
 
 h1 {
@@ -65,9 +63,10 @@ h3 {
 }
 
 .intro header h1 {
-  color: #E1B923;
+  margin: -0.1em;
+  color: #e1b923;
   text-transform: uppercase;
-  background: linear-gradient(90deg, #E1B923, #FFFFFF, #E1B923);
+  background: linear-gradient(90deg, #e1b923, #fff, #e1b923);
   background-repeat: no-repeat;
   background-size: 80%;
   animation: animate 5s linear infinite;
@@ -77,11 +76,9 @@ h3 {
   -webkit-text-stroke: 2px #01315c;
 }
 
-.intro header h1,
-.intro header h2 {
+.intro header h1, .intro header h2 {
   text-align: center;
 }
-
 @keyframes animate {
   0% {
     background-position: -500%;
@@ -96,7 +93,6 @@ footer {
   display: flex;
   margin-top: 1.5em;
 }
-
 footer a {
   font-weight: 100;
   background-color: #03a9f4;
@@ -114,12 +110,10 @@ footer a {
   width: 80px;
   transition: 1s ease-in;
 }
-
 footer a:hover {
   color: #D44013;
   transform: scale(1.3);
 }
-
 footer a:focus, footer a:active {
   color: #013E75;
 }
@@ -136,7 +130,7 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/darker-ocean.jpg) no-repeat center fixed;
   background-size: cover;
   height: 100%;
-  color: white;
+  color: #fff;
 }
 
 .sidebar {
@@ -159,11 +153,9 @@ p {
 .wrapper {
   text-align: center;
 }
-
 .wrapper li {
   list-style-type: none;
 }
-
 .wrapper ul {
   margin-top: 0.5em;
 }
@@ -172,26 +164,32 @@ p {
   .intro header h1 {
     -webkit-text-stroke: 1px #03a9f4;
   }
+
   .sidebar,
-  .sidebar h3 {
+.sidebar h3 {
     text-align: right;
   }
+
   .intro,
-  .supporting,
-  .sidebar {
+.supporting,
+.sidebar {
     padding: 1em 2em;
   }
+
   .wrapper {
     text-align: right;
   }
+
   .page-wrapper {
     display: block;
     padding: 2em 0;
   }
+
   h3 {
     padding: 1em;
     text-align: center;
   }
+
   footer::after {
     content: "";
     display: block;
@@ -207,6 +205,7 @@ p {
     margin-top: 18em;
     margin-left: 1.5em;
   }
+
   @keyframes swing {
     0% {
       transform: rotate(3deg);
@@ -216,17 +215,19 @@ p {
     }
   }
 }
-
 @media only screen and (min-width: 50rem) {
   .intro header h1 {
     -webkit-text-stroke: 2px #03a9f4;
   }
+
   body {
     margin: 0 auto;
   }
+
   .sidebar h3 {
     text-align: left;
   }
+
   .page-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 350px);
@@ -234,16 +235,19 @@ p {
     align-items: start;
     justify-content: center;
   }
+
   .intro {
-    grid-column: 1 / 3;
-    grid-row: 1 / 2;
+    grid-column: 1/3;
+    grid-row: 1/2;
   }
+
   .sidebar {
-    grid-column: 1 / 3;
-    grid-row: 3 / 4;
+    grid-column: 1/3;
+    grid-row: 3/4;
     font-size: 12px;
     padding-left: 7em;
   }
+
   .wrapper {
     display: grid;
     grid-template-columns: 50px 300px 300px 50px;
@@ -251,22 +255,27 @@ p {
     align-items: center;
     text-align: left;
   }
+
   .design-selection {
-    grid-column: 2 / 3;
-    grid-row: 1 / 3;
+    grid-column: 2/3;
+    grid-row: 1/3;
   }
+
   .design-archives {
-    grid-column: 3 / 4;
-    grid-row: 1 / 2;
+    grid-column: 3/4;
+    grid-row: 1/2;
   }
+
   .zen-resources {
-    grid-column: 3 / 4;
-    grid-row: 2 / 3;
+    grid-column: 3/4;
+    grid-row: 2/3;
   }
+
   .supporting {
-    grid-column: 1 / 3;
-    grid-row: 2 / 3;
+    grid-column: 1/3;
+    grid-row: 2/3;
   }
+
   .explanation p:nth-child(2)::after {
     background-image: url(images/fish-11861.png);
     background-repeat: no-repeat;
@@ -284,6 +293,7 @@ p {
     background-image: url(images/hawaiian-fish.png);
     z-index: 2;
   }
+
   .participation p:nth-child(2)::after {
     background-image: url(images/fish-11908.png);
     background-repeat: no-repeat;
@@ -299,6 +309,7 @@ p {
   .participation p:nth-child(2):hover::after {
     background-image: url(images/fishes.png);
   }
+
   .requirements p:nth-child(2)::after {
     background-image: url(images/goldfish.png);
     background-repeat: no-repeat;
@@ -315,17 +326,18 @@ p {
     background-image: url(images/golfish2.png);
     transform: scale(0.7);
   }
+
   footer a {
     font-weight: bold;
     padding: 12px;
     font-size: 15px;
     margin: 4px 8px;
   }
+
   footer::after {
     display: none;
   }
 }
-
 /* end media query */
 @media only screen and (min-width: 61rem) {
   body::after {
@@ -341,6 +353,7 @@ p {
     animation: slide-fish 8s forwards infinite;
     overflow: hidden;
   }
+
   .extra2 {
     background-image: url("images/blue-fish.png");
     background-repeat: no-repeat;
@@ -353,6 +366,7 @@ p {
     top: 300px;
     overflow: hidden;
   }
+
   @keyframes slide-fish {
     0% {
       left: -400px;
@@ -368,42 +382,54 @@ p {
     }
   }
   .extra4 {
+    position: absolute;
     background-image: url("images/bubbles.png");
     background-repeat: no-repeat;
-    z-index: 1;
-    position: fixed;
-    animation: animatebubble 25s linear infinite;
+    z-index: -5;
+    animation: animatebubble 5s linear reverse infinite;
     width: 500px;
     height: 500px;
+    top: 0px;
+    left: 100px;
   }
+
   .extra6 {
+    position: absolute;
+    top: 0px;
+    left: 650px;
     width: 500px;
     height: 500px;
     opacity: 0.2;
     background-image: url("images/bubbles.svg");
     background-repeat: no-repeat;
-    animation: animatebubble 25s linear infinite;
-    animation-delay: 3s;
-    transform: scale(0.8);
+    animation: animatebubble 3s linear reverse infinite;
+    transform: scale(0.9);
+    z-index: -3;
   }
+
   @keyframes animatebubble {
     0% {
-      margin-top: 100%;
+      top: 0px;
+      opacity: 0.6;
     }
     100% {
-      margin-top: -300%;
+      top: 300px;
+      opacity: 0;
     }
   }
   .intro header h1 {
-    -webkit-text-stroke: 2px #013E75;
+    -webkit-text-stroke: 2px #013e75;
   }
+
   .intro h2 abbr {
     animation: tracking-in-contract-bck 5s cubic-bezier(0.215, 0.61, 0.355, 1) both, flicker-1 10s linear infinite both;
-    color: #D44013;
+    color: #d44013;
   }
-  @keyframes tracking-in-contract-bck {
+
+  @-webkit-keyframes tracking-in-contract-bck {
     0% {
       letter-spacing: 1em;
+      -webkit-transform: translateZ(400px);
       transform: translateZ(400px);
       opacity: 0;
     }
@@ -411,13 +437,29 @@ p {
       opacity: 0.6;
     }
     100% {
+      -webkit-transform: translateZ(0);
       transform: translateZ(0);
       opacity: 1;
     }
   }
-  @keyframes flicker-1 {
-    0%,
+  @keyframes tracking-in-contract-bck {
+    0% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(400px);
+      transform: translateZ(400px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
     100% {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes flicker-1 {
+    0%, 100% {
       opacity: 1;
     }
     41.99% {
@@ -445,20 +487,54 @@ p {
       opacity: 1;
     }
   }
+  @keyframes flicker-1 {
+    0%, 100% {
+      opacity: 1;
+    }
+    41.99% {
+      opacity: 1;
+    }
+    42% {
+      opacity: 0;
+    }
+    43% {
+      opacity: 0;
+    }
+    43.01% {
+      opacity: 1;
+    }
+    47.99% {
+      opacity: 1;
+    }
+    48% {
+      opacity: 0;
+    }
+    49% {
+      opacity: 0;
+    }
+    49.01% {
+      opacity: 1;
+    }
+  }
+  body,
+html {
+    height: 100%;
+  }
+
   body {
     padding: 5px;
     max-width: 80rem;
     position: relative;
     background: url(images/darker-ocean.jpg) no-repeat center center fixed;
     background-size: cover;
-    height: 100%;
-    overflow: hidden;
-    color: white;
+    color: #fff;
   }
-  h3 {
+  body h3 {
     padding: 0px;
   }
+
   .page-wrapper {
+    height: 100%;
     display: grid;
     align-items: start;
     justify-content: center;
@@ -477,17 +553,18 @@ p {
     height: 567px;
     transform: scale(0.8);
   }
+
   .intro {
-    grid-column: 1 / 4;
-    grid-row: 1 / 11;
+    grid-column: 1/4;
+    grid-row: 1/11;
     display: grid;
     grid-template-columns: 25% 75%;
     grid-template-rows: 200px repeat(9, auto);
     margin-left: 1em;
   }
   .intro header {
-    grid-column: 1 / 3;
-    grid-row: 1 / 3;
+    grid-column: 1/3;
+    grid-row: 1/3;
   }
   .intro header h1 {
     font-size: 6em;
@@ -496,22 +573,29 @@ p {
     font-size: 2em;
     color: #01315c;
   }
+
   .summary,
-  .preamble {
-    font-size: smaller;
-    margin: 0 .5em;
+.preamble {
+    font-size: 12.5px;
+    margin: 0 0.5em;
   }
+
   .summary {
-    grid-column: 1 / 2;
-    grid-row: 2 / 4;
+    grid-column: 1/2;
+    grid-row: 2/4;
   }
   .summary p:first-child {
     margin-top: 0;
   }
+
   .preamble {
-    grid-column: 1 / 2;
-    grid-row: 4 / 5;
+    grid-column: 1/2;
+    grid-row: 4/5;
   }
+  .preamble h3 {
+    padding: 5px;
+  }
+
   .supporting {
     position: absolute;
     left: 26%;
@@ -524,8 +608,8 @@ p {
     margin-top: 10em;
   }
   .supporting h3 {
-    padding-top: .5em;
-    margin: .5em;
+    padding-top: 0.5em;
+    margin: 0.5em;
   }
   .supporting div {
     color: #01315c;
@@ -537,77 +621,85 @@ p {
   .supporting div:last-of-type {
     padding-bottom: 50px;
   }
+
   .explanation {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
+    grid-column: 1/2;
+    grid-row: 2/3;
     background: #5eb2fe;
     animation: zchange 60s ease-in-out infinite;
   }
   .explanation p:nth-child(2)::after {
     display: none;
   }
+
   @keyframes zchange {
     0% {
       margin-top: -15px;
     }
     50% {
-      margin-top: -2080px;
+      margin-top: -2070px;
     }
     100% {
-      margin-top: 0px;
+      margin-top: -15px;
     }
   }
   .participation {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    background: #99CEDC;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background: #99cedc;
   }
   .participation p:nth-child(2)::after {
     display: none;
   }
+
   .benefits {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
+    grid-column: 1/2;
+    grid-row: 2/3;
     background: #f07853;
   }
+
+  footer {
+    position: fixed;
+    top: 550px;
+    left: 71%;
+    z-index: 1;
+    transform: scale(0.7);
+  }
+  footer a {
+    transition: 0.5s ease-in;
+  }
+  footer a:hover {
+    color: #d44013;
+    transform: scale(1.2);
+  }
+
   .requirements {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    background: #E1B923;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background: #e1b923;
   }
   .requirements a,
-  .requirements .participation a {
+.requirements .participation a {
     color: #bd3911;
   }
   .requirements p:nth-child(2)::after {
     display: none;
   }
+
   .participation h3,
-  .benefits h3,
-  .requirements h3 {
+.benefits h3,
+.requirements h3 {
     color: #01315c;
   }
-  footer {
-    position: fixed;
-    top: 550px;
-    left: 71%;
-    z-index: 500;
-    transform: scale(0.8);
-  }
-  footer a {
-    transition: .5s ease-in;
-  }
-  footer a:hover {
-    color: #D44013;
-    transform: scale(1.2);
-  }
+
   .sidebar {
-    grid-column: 3 / 4;
-    grid-row: 1 / 11;
+    grid-column: 3/4;
+    grid-row: 1/11;
     margin-top: 15em;
     padding-left: 0;
     font-size: small;
   }
+
   .wrapper {
     display: grid;
     grid-template-columns: 100%;
@@ -617,64 +709,67 @@ p {
     font-size: smaller;
     line-height: 1.4;
   }
+
   .design-selection {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
+    grid-column: 1/2;
+    grid-row: 1/2;
   }
+
   .design-archives {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
+    grid-column: 1/2;
+    grid-row: 2/3;
   }
+
   .zen-resources {
-    grid-column: 1 / 2;
-    grid-row: 3 / 4;
+    grid-column: 1/2;
+    grid-row: 3/4;
   }
 }
-
 /*end of media 61rem min*/
 /* small tweaks in large view */
 @media only screen and (min-width: 63.5rem) {
   .page-wrapper::before {
     left: 18%;
   }
+
   .supporting {
     left: 27%;
   }
 }
-
 @media only screen and (min-width: 66rem) {
   .page-wrapper::before {
     left: 20%;
   }
+
   .supporting {
     left: 28%;
   }
 }
-
 @media only screen and (min-width: 68.75rem) {
   .page-wrapper::before {
     transform: scale(0.9);
   }
+
   .supporting {
     top: 100px;
     height: 310px;
   }
 }
-
 @media only screen and (min-width: 70.625rem) {
   .page-wrapper::before {
     left: 21.5%;
   }
+
   .supporting {
     left: 28%;
   }
 }
-
 @media only screen and (min-width: 76.5rem) {
   .page-wrapper::before {
     transform: scale(1);
     left: 24%;
   }
+
   .supporting {
     top: 80px;
     height: 330px;
@@ -682,14 +777,13 @@ p {
     left: 27.5%;
   }
 }
-
 @media only screen and (min-width: 100rem) {
   footer {
     left: 65%;
   }
 }
-
 li {
   list-style-type: none;
 }
+
 /*# sourceMappingURL=style.css.map */

@@ -1,10 +1,10 @@
 body {
-  background: linear-gradient(rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba($color-7, 0.5),
+      rgba($color-7, 0.5)),
     url(images/darker-ocean.jpg) no-repeat center fixed;
   background-size: cover;
   height: 100%;
-  color: white;
+  color: $color-5;
 }
 
 .sidebar {
@@ -39,7 +39,7 @@ p {
 @media only screen and (min-width : 20rem) {
 
   .intro header h1 {
-    -webkit-text-stroke: 1px #03a9f4;
+    -webkit-text-stroke: 1px $color-6;
   }
 
   .sidebar,

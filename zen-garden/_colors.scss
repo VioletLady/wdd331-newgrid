@@ -1,15 +1,15 @@
 // color palette - these colors will be the color swatches of the Colors section
-$color-1: #013E75; // Dark Blue - Action color
-$color-2: #99CEDC; // Light Blue
-$color-3: #D44013; // Orange
-$color-4: #E1B923; // Yellow
-$color-5: #FFFFFF; // White
+$color-1: #013e75; // Dark Blue - Action color
+$color-2: #99cedc; // Light Blue
+$color-3: #d44013; // Orange
+$color-4: #e1b923; // Yellow
+$color-5: #fff; // White
+$color-6: #03a9f4; // Blue
+$color-7: rgb(0, 0, 0); // Black
+$color-8: rgb(255, 255, 255); //White
 
-// additional colors
-$success: #6fce72; // green
-$alert: $color-3;
+//Navigation colors
 
-/*Navigation colors*/
 a {
   cursor: url(https://cur.cursors-4u.net/nature/nat-8/nat710.cur), auto !important;
 }
@@ -38,6 +38,7 @@ h3 {
 }
 
 @keyframes myh3 {
+
   0% {
     color: $color-4;
   }
@@ -49,4 +50,5 @@ h3 {
   100% {
     color: $color-4;
   }
+  
 }

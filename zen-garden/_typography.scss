@@ -1,8 +1,10 @@
 // fonts
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,400&family=Poppins:wght@300;400;700;900&display=swap');
 
-$primary-font: 'Merriweather', serif;
-$secondary-font: 'Poppins', sans-serif;
+$primary-font: 'Merriweather',
+serif;
+$secondary-font: 'Poppins',
+sans-serif;
 
 body {
   font-family: $secondary-font;
