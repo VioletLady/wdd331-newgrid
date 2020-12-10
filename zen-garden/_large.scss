@@ -2,7 +2,10 @@
   @import "animationfish";
   @import "LargeTitleAnimation";
 
-  body, html {height:100%;}
+  body,
+  html {
+    height: 100%;
+  }
 
   body {
     padding: 5px;
@@ -12,14 +15,14 @@
     background-size: cover;
     //overflow: hidden;
     color: $color-5;
-  }
 
-  h3 {
-    padding: 0px;
+    h3 {
+      padding: 0px;
+    }
   }
 
   .page-wrapper {
-    height:100%;
+    height: 100%;
     display: grid;
     align-items: start;
     justify-content: center;
