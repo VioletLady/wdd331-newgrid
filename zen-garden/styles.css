@@ -391,7 +391,6 @@ p {
     height: 500px;
     top: 0px;
     left: 100px;
-    opacity: 0.8;
   }
 
   .extra6 {
@@ -410,11 +409,11 @@ p {
 
   @keyframes animatebubble {
     0% {
-      top: 0%;
+      top: 0px;
       opacity: 0.6;
     }
     100% {
-      top: 50%;
+      top: 300px;
       opacity: 0;
     }
   }
